@@ -1,0 +1,19 @@
+            app.ConnectButton.Enable = app.stateButtons(1);
+            app.BuildButton.Enable = app.stateButtons(2); 
+            app.LaunchButton.Enable = app.stateButtons(3); 
+            app.TotalStationButton.Enable = app.stateButtons(4);
+            app.StartButton.Enable = app.stateButtons(5);
+            app.StopButton.Enable = app.stateButtons(6);
+            app.ShutdownRaspiButton.Enable = app.stateButtons(7);   
+            app.PX4Button.Enable = app.stateButtons(8);
+
+            app.SelectsignalDropDown.Enable = app.stateButtons(9);
+            app.GeneratePlotButton.Enable = app.stateButtons(10);
+            app.SelectLogDropDown.Enable = app.stateButtons(11);
+            app.UploadButton.Enable = app.stateButtons(12);
+           
+            app.ControllersButton.Enable = app.stateButtons(13);
+            app.FiltersButton.Enable = app.stateButtons(14);
+            app.ControlmodesButton.Enable = app.stateButtons(15);
+
+            app.XButton.Enable = app.stateButtons(16);

@@ -1,0 +1,1 @@
+tmux -c /home/pi/remote/run_aerobi     

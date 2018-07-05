@@ -1,0 +1,118 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   14 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "time"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:289-293"\
+    }\
+    ChartData {\
+      Name         "time_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:289-293"\
+    }\
+    ChartData {\
+      Name         "timeTS0"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:294-301"\
+    }\
+    ChartData {\
+      Name         "timeTS0_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:294-301"\
+    }\
+    ChartData {\
+      Name         "dx_k"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:302-306"\
+      Dimensions   [6]\
+    }\
+    ChartData {\
+      Name         "dx_k_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:302-306"\
+    }\
+    ChartData {\
+      Name         "dP_k"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:307-311"\
+      Dimensions   [6,6]\
+    }\
+    ChartData {\
+      Name         "dP_k_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:307-311"\
+    }\
+    ChartData {\
+      Name         "queue_dx_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:312-320"\
+    }\
+    ChartData {\
+      Name         "queue_dP_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:321-329"\
+    }\
+    ChartData {\
+      Name         "index"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:330-335"\
+    }\
+    ChartData {\
+      Name         "index_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:330-335"\
+    }\
+    ChartData {\
+      Name         "Ndata_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:336-341"\
+    }\
+    ChartData {\
+      Name         "timefreq_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4780:342-350"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

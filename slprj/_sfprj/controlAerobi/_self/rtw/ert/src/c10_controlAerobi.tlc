@@ -1,0 +1,78 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   8 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "q_"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:170-172"\
+      Dimensions   [4]\
+    }\
+    ChartData {\
+      Name         "q__not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:170-172"\
+    }\
+    ChartData {\
+      Name         "b_"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:173-175"\
+      Dimensions   [3]\
+    }\
+    ChartData {\
+      Name         "b__not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:173-175"\
+    }\
+    ChartData {\
+      Name         "mi"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:176-178"\
+      Dimensions   [3]\
+    }\
+    ChartData {\
+      Name         "mi_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:176-178"\
+    }\
+    ChartData {\
+      Name         "e3"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:179-181"\
+      Dimensions   [3]\
+    }\
+    ChartData {\
+      Name         "e3_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3331:179-181"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

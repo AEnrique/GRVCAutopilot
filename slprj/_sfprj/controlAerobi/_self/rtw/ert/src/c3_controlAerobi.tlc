@@ -1,0 +1,60 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   6 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "yaw_references"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:197-211"\
+    }\
+    ChartData {\
+      Name         "yaw_references_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:197-211"\
+    }\
+    ChartData {\
+      Name         "yaw_position_old"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:212-228"\
+    }\
+    ChartData {\
+      Name         "yaw_position_old_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:212-228"\
+    }\
+    ChartData {\
+      Name         "n"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:229-230"\
+    }\
+    ChartData {\
+      Name         "n_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:3334:229-230"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

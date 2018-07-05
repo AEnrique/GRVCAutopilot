@@ -1,0 +1,4 @@
+cd rtw/controlAerobi_ert_rtw
+make -f controlAerobi.mk all
+cp ~/rtw/controlAerobi.elf ~/remote
+quit

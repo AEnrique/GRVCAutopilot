@@ -1,0 +1,6288 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for controlAerobi
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for controlAerobi
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry_Point_Functions">
+Entry Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry_Point_Functions">
+Entry Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="controlAerobi_cpp.html#fcn_controlAerobi_initialize">controlAerobi_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void controlAerobi_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="controlAerobi_h.html">controlAerobi.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="controlAerobi_cpp.html#fcn_controlAerobi_step">controlAerobi_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void controlAerobi_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.0025 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="controlAerobi_h.html">controlAerobi.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="controlAerobi_cpp.html#fcn_controlAerobi_terminate">controlAerobi_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void controlAerobi_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="controlAerobi_h.html">controlAerobi.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1')" name="code2model" class="code2model">&lt;Root&gt;/I_imu_mpu</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_imu_mpu
+</td>
+<td width="21%" align="left" valign="top">
+shm_imu
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:56')" name="code2model" class="code2model">&lt;Root&gt;/I_RCinput</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_RCinput
+</td>
+<td width="21%" align="left" valign="top">
+shm_RCin
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2212')" name="code2model" class="code2model">&lt;Root&gt;/I_sf11c</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_sf11c
+</td>
+<td width="21%" align="left" valign="top">
+shm_lightware
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2213')" name="code2model" class="code2model">&lt;Root&gt;/I_adc</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_adc
+</td>
+<td width="21%" align="left" valign="top">
+shm_adc
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2240')" name="code2model" class="code2model">&lt;Root&gt;/I_totalStation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_totalStation
+</td>
+<td width="21%" align="left" valign="top">
+shm_totalStation
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3009')" name="code2model" class="code2model">&lt;Root&gt;/I_imu_lsm</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_imu_lsm
+</td>
+<td width="21%" align="left" valign="top">
+shm_imu
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4841')" name="code2model" class="code2model">&lt;Root&gt;/I_px4flow</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_U.I_px4flow
+</td>
+<td width="21%" align="left" valign="top">
+shm_px4flow
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:8')" name="code2model" class="code2model">&lt;Root&gt;/O_servoOut</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_Y.O_servoOut
+</td>
+<td width="21%" align="left" valign="top">
+shm_RCou
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4840')" name="code2model" class="code2model">&lt;Root&gt;/StateMode</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_Y.StateMode
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+[3]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:863')" name="code2model" class="code2model">&lt;S74&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScaled
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3383')" name="code2model" class="code2model">&lt;S75&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScal_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3412')" name="code2model" class="code2model">&lt;S56&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScal_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1061')" name="code2model" class="code2model">&lt;S57&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScal_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3441')" name="code2model" class="code2model">&lt;S34&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScal_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3470')" name="code2model" class="code2model">&lt;S32&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevSca_da
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3500')" name="code2model" class="code2model">&lt;S35&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevScal_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3529')" name="code2model" class="code2model">&lt;S33&gt;/Discrete Derivative</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteDerivative_ICPrevSca_kf
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1615')" name="code2model" class="code2model">&lt;Root&gt;/logs</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.logs_SelectPlot1
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1615')" name="code2model" class="code2model">&lt;Root&gt;/logs</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.logs_SelectPlot2
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1615')" name="code2model" class="code2model">&lt;Root&gt;/logs</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.logs_SelectPlot3
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1615')" name="code2model" class="code2model">&lt;Root&gt;/logs</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.logs_SelectPlot4
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2035')" name="code2model" class="code2model">&lt;S155&gt;/Compare To Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant1_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2036')" name="code2model" class="code2model">&lt;S155&gt;/Compare To Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant2_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2037')" name="code2model" class="code2model">&lt;S155&gt;/Compare To Constant3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant3_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2096')" name="code2model" class="code2model">&lt;S165&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2082')" name="code2model" class="code2model">&lt;S164&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2089')" name="code2model" class="code2model">&lt;S166&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3753')" name="code2model" class="code2model">&lt;S155&gt;/Compare To Constant4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant4_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4166')" name="code2model" class="code2model">&lt;S27&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3463')" name="code2model" class="code2model">&lt;S36&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_h5
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3522')" name="code2model" class="code2model">&lt;S40&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3434')" name="code2model" class="code2model">&lt;S44&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3493')" name="code2model" class="code2model">&lt;S48&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3405')" name="code2model" class="code2model">&lt;S59&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1054')" name="code2model" class="code2model">&lt;S63&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4675')" name="code2model" class="code2model">&lt;S69&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:856')" name="code2model" class="code2model">&lt;S76&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_hw
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3376')" name="code2model" class="code2model">&lt;S80&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3578')" name="code2model" class="code2model">&lt;S87&gt;/Compare To Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.CompareToConstant_const_bo
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4366')" name="code2model" class="code2model">&lt;S120&gt;/PX4 receive</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.PX4receive_localPort
+</td>
+<td width="21%" align="left" valign="top">
+int32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4353')" name="code2model" class="code2model">&lt;S181&gt;/Local position receive</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Localpositionreceive_localPort
+</td>
+<td width="21%" align="left" valign="top">
+int32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3761')" name="code2model" class="code2model">&lt;S5&gt;/Reset</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Reset_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[4  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4142')" name="code2model" class="code2model">&lt;S20&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4142')" name="code2model" class="code2model">&lt;S20&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2052')" name="code2model" class="code2model">&lt;S156&gt;/Xdes</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Xdes_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2054')" name="code2model" class="code2model">&lt;S156&gt;/Ydes</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Ydes_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3965')" name="code2model" class="code2model">&lt;S18&gt;/zero</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.zero_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3963')" name="code2model" class="code2model">&lt;S18&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3963')" name="code2model" class="code2model">&lt;S18&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4171')" name="code2model" class="code2model">&lt;S26&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2928')" name="code2model" class="code2model">&lt;S52&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation2_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2928')" name="code2model" class="code2model">&lt;S52&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation2_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1116')" name="code2model" class="code2model">&lt;S29&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2741')" name="code2model" class="code2model">&lt;S29&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3469')" name="code2model" class="code2model">&lt;S32&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3528')" name="code2model" class="code2model">&lt;S33&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1565')" name="code2model" class="code2model">&lt;S95&gt;/I_Yaw_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_Yaw_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1602')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_Yaw_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_Yaw_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3440')" name="code2model" class="code2model">&lt;S34&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3499')" name="code2model" class="code2model">&lt;S35&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3498')" name="code2model" class="code2model">&lt;S35&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1601')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_Yaw_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_Yaw_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3411')" name="code2model" class="code2model">&lt;S56&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1060')" name="code2model" class="code2model">&lt;S57&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3940')" name="code2model" class="code2model">&lt;S58&gt;/zero</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.zero_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1603')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_Z_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_Z_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1604')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_Z_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_Z_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3768')" name="code2model" class="code2model">&lt;S73&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3768')" name="code2model" class="code2model">&lt;S73&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3583')" name="code2model" class="code2model">&lt;S86&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2199')" name="code2model" class="code2model">&lt;S90&gt;/Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2198')" name="code2model" class="code2model">&lt;S90&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1346')" name="code2model" class="code2model">&lt;S91&gt;/Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant2_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3126')" name="code2model" class="code2model">&lt;S117&gt;/offset</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.offset_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3343')" name="code2model" class="code2model">&lt;S117&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4333')" name="code2model" class="code2model">&lt;S119&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_ab
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  4]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2083')" name="code2model" class="code2model">&lt;S164&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2097')" name="code2model" class="code2model">&lt;S165&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2090')" name="code2model" class="code2model">&lt;S166&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4748')" name="code2model" class="code2model">&lt;S173&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4747')" name="code2model" class="code2model">&lt;S173&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4928')" name="code2model" class="code2model">&lt;S173&gt;/select_xy_px1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.select_xy_px1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4628')" name="code2model" class="code2model">&lt;S173&gt;/select_xy_px4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.select_xy_px4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4713')" name="code2model" class="code2model">&lt;S173&gt;/selector_xy_ekf</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.selector_xy_ekf_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1256')" name="code2model" class="code2model">&lt;S7&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1345')" name="code2model" class="code2model">&lt;S91&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4578')" name="code2model" class="code2model">&lt;S101&gt;/select</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.select_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4339')" name="code2model" class="code2model">&lt;S119&gt;/Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Switch_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4338')" name="code2model" class="code2model">&lt;S119&gt;/Rotation Angles  correction</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RotationAnglescorrection_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3198')" name="code2model" class="code2model">&lt;S110&gt;/M gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Mgyro_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3197')" name="code2model" class="code2model">&lt;S110&gt;/Bias gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasgyro_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4325')" name="code2model" class="code2model">&lt;S110&gt;/reset</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.reset_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3191')" name="code2model" class="code2model">&lt;S108&gt;/M accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Maccel_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3190')" name="code2model" class="code2model">&lt;S108&gt;/Bias accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasaccel_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3146')" name="code2model" class="code2model">&lt;S148&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3205')" name="code2model" class="code2model">&lt;S112&gt;/M magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Mmagnet_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3204')" name="code2model" class="code2model">&lt;S112&gt;/Bias magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasmagnet_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3233')" name="code2model" class="code2model">&lt;S117&gt;/kb</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.kb_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3229')" name="code2model" class="code2model">&lt;S117&gt;/k1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3230')" name="code2model" class="code2model">&lt;S117&gt;/k2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3231')" name="code2model" class="code2model">&lt;S117&gt;/k3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3232')" name="code2model" class="code2model">&lt;S117&gt;/k4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3234')" name="code2model" class="code2model">&lt;S117&gt;/limit</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.limit_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3219')" name="code2model" class="code2model">&lt;S109&gt;/M gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Mgyro_Value_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3218')" name="code2model" class="code2model">&lt;S109&gt;/Bias gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasgyro_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3212')" name="code2model" class="code2model">&lt;S107&gt;/M accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Maccel_Value_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3211')" name="code2model" class="code2model">&lt;S107&gt;/Bias accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasaccel_Value_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4497')" name="code2model" class="code2model">&lt;S107&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_RisingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4497')" name="code2model" class="code2model">&lt;S107&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_FallingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4497')" name="code2model" class="code2model">&lt;S107&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_IC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4308')" name="code2model" class="code2model">&lt;S137&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3226')" name="code2model" class="code2model">&lt;S111&gt;/M magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Mmagnet_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3225')" name="code2model" class="code2model">&lt;S111&gt;/Bias magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Biasmagnet_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4305')" name="code2model" class="code2model">&lt;S111&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_RisingLim_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4305')" name="code2model" class="code2model">&lt;S111&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_FallingLim_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4305')" name="code2model" class="code2model">&lt;S111&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_IC_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3045')" name="code2model" class="code2model">&lt;S116&gt;/kb</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.kb_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3041')" name="code2model" class="code2model">&lt;S116&gt;/k1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k1_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3042')" name="code2model" class="code2model">&lt;S116&gt;/k2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k2_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3043')" name="code2model" class="code2model">&lt;S116&gt;/k3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k3_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3044')" name="code2model" class="code2model">&lt;S116&gt;/k4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k4_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3046')" name="code2model" class="code2model">&lt;S116&gt;/limit</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.limit_Value_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4429')" name="code2model" class="code2model">&lt;S140&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3037')" name="code2model" class="code2model">&lt;S116&gt;/offset</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.offset_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3342')" name="code2model" class="code2model">&lt;S116&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4447')" name="code2model" class="code2model">&lt;S113&gt;/M_accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.M_accel_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4304')" name="code2model" class="code2model">&lt;S113&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_RisingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4304')" name="code2model" class="code2model">&lt;S113&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_FallingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4304')" name="code2model" class="code2model">&lt;S113&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_IC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4446')" name="code2model" class="code2model">&lt;S113&gt;/Bias_accel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Bias_accel_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4454')" name="code2model" class="code2model">&lt;S114&gt;/M_gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.M_gyro_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4453')" name="code2model" class="code2model">&lt;S114&gt;/Bias_gyro</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Bias_gyro_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4462')" name="code2model" class="code2model">&lt;S115&gt;/M_magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.M_magnet_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4467')" name="code2model" class="code2model">&lt;S139&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4464')" name="code2model" class="code2model">&lt;S115&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_RisingLim_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4464')" name="code2model" class="code2model">&lt;S115&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_FallingLim_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4464')" name="code2model" class="code2model">&lt;S115&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_IC_iz
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4531')" name="code2model" class="code2model">&lt;S115&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4461')" name="code2model" class="code2model">&lt;S115&gt;/Bias_magnet</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Bias_magnet_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4525')" name="code2model" class="code2model">&lt;S106&gt;/mu_a</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.mu_a_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4529')" name="code2model" class="code2model">&lt;S106&gt;/mu_m</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.mu_m_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4527')" name="code2model" class="code2model">&lt;S106&gt;/rk</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.rk_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[6  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4568')" name="code2model" class="code2model">&lt;S106&gt;/qk</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.qk_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[10   1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4533')" name="code2model" class="code2model">&lt;S106&gt;/mu</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.mu_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4567')" name="code2model" class="code2model">&lt;S106&gt;/chi</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.chi_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4534')" name="code2model" class="code2model">&lt;S106&gt;/p0</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.p0_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4532')" name="code2model" class="code2model">&lt;S106&gt;/distorsion_max</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.distorsion_max_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4302')" name="code2model" class="code2model">&lt;S127&gt;/ym</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ym_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4588')" name="code2model" class="code2model">&lt;S127&gt;/ya</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ya_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4303')" name="code2model" class="code2model">&lt;S127&gt;/weight</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.weight_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4590')" name="code2model" class="code2model">&lt;S127&gt;/distorsion_max</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.distorsion_max_Value_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4571')" name="code2model" class="code2model">&lt;S106&gt;/er</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.er_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4896')" name="code2model" class="code2model">&lt;S174&gt;/NED//ENU</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.NEDENU_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2107')" name="code2model" class="code2model">&lt;S157&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2074')" name="code2model" class="code2model">&lt;S157&gt;/Constant4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2075')" name="code2model" class="code2model">&lt;S157&gt;/Constant5</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant5_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4806')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_RisingLim_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4806')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_FallingLim_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4806')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter_IC_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4807')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_RisingLim_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4807')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_FallingLim_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4807')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter1_IC_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4808')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter2_RisingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4808')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter2_FallingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4808')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter2_IC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4809')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter3_RisingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4809')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter3_FallingLim
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4809')" name="code2model" class="code2model">&lt;S175&gt;/Rate Limiter3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.RateLimiter3_IC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3171')" name="code2model" class="code2model">&lt;S100&gt;/d_sf11</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.d_sf11_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3177')" name="code2model" class="code2model">&lt;S100&gt;/KQ</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.KQ_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  6]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3178')" name="code2model" class="code2model">&lt;S100&gt;/KR</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.KR_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  5]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4647')" name="code2model" class="code2model">&lt;S173&gt;/selector_z</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.selector_z_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4855')" name="code2model" class="code2model">&lt;S172&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4854')" name="code2model" class="code2model">&lt;S172&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4884')" name="code2model" class="code2model">&lt;S172&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4923')" name="code2model" class="code2model">&lt;S172&gt;/Gain4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain4_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2055')" name="code2model" class="code2model">&lt;S156&gt;/Zdes</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Zdes_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3952')" name="code2model" class="code2model">&lt;S18&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainval
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3952')" name="code2model" class="code2model">&lt;S18&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4172')" name="code2model" class="code2model">&lt;S26&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4172')" name="code2model" class="code2model">&lt;S26&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4173')" name="code2model" class="code2model">&lt;S26&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4173')" name="code2model" class="code2model">&lt;S26&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4228')" name="code2model" class="code2model">&lt;S16&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4225')" name="code2model" class="code2model">&lt;S16&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_al
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4214')" name="code2model" class="code2model">&lt;S16&gt;/b1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.b1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4223')" name="code2model" class="code2model">&lt;S16&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3702')" name="code2model" class="code2model">&lt;S94&gt;/k_x</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_x_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3703')" name="code2model" class="code2model">&lt;S94&gt;/k_v</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_v_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4591')" name="code2model" class="code2model">&lt;S94&gt;/k_i</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_i_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4592')" name="code2model" class="code2model">&lt;S94&gt;/c1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.c1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4593')" name="code2model" class="code2model">&lt;S94&gt;/sat_P</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.sat_P_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3357')" name="code2model" class="code2model">&lt;S94&gt;/Mass</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Mass_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4293')" name="code2model" class="code2model">&lt;S9&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_b5
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3186')" name="code2model" class="code2model">&lt;S104&gt;/Hlp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Hlp_InitialStates
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3186')" name="code2model" class="code2model">&lt;S104&gt;/Hlp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Hlp_Coefficients
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  11]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2105')" name="code2model" class="code2model">&lt;S157&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2071')" name="code2model" class="code2model">&lt;S157&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_k1
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2072')" name="code2model" class="code2model">&lt;S157&gt;/Constant1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant1_Value_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2112')" name="code2model" class="code2model">&lt;S157&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation2_UpperSat_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2112')" name="code2model" class="code2model">&lt;S157&gt;/Saturation2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation2_LowerSat_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4292')" name="code2model" class="code2model">&lt;S11&gt;/Gain4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain4_Gain_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2106')" name="code2model" class="code2model">&lt;S157&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2073')" name="code2model" class="code2model">&lt;S157&gt;/Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant2_Value_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2109')" name="code2model" class="code2model">&lt;S157&gt;/Gain4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain4_Gain_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2111')" name="code2model" class="code2model">&lt;S157&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_UpperSat_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2111')" name="code2model" class="code2model">&lt;S157&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_LowerSat_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4291')" name="code2model" class="code2model">&lt;S11&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2108')" name="code2model" class="code2model">&lt;S157&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain3_Gain_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2076')" name="code2model" class="code2model">&lt;S157&gt;/Constant6</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant6_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2077')" name="code2model" class="code2model">&lt;S157&gt;/Constant7</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant7_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2110')" name="code2model" class="code2model">&lt;S157&gt;/Gain5</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain5_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3766')" name="code2model" class="code2model">&lt;S11&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4233')" name="code2model" class="code2model">&lt;S11&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3739')" name="code2model" class="code2model">&lt;S11&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_n5
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3356')" name="code2model" class="code2model">&lt;S94&gt;/J</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.J_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  3]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3700')" name="code2model" class="code2model">&lt;S94&gt;/k_R</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_R_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3701')" name="code2model" class="code2model">&lt;S94&gt;/k_Omega</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_Omega_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4509')" name="code2model" class="code2model">&lt;S94&gt;/k_I</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.k_I_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4510')" name="code2model" class="code2model">&lt;S94&gt;/c2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.c2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4511')" name="code2model" class="code2model">&lt;S94&gt;/sat_R</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.sat_R_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4286')" name="code2model" class="code2model">&lt;S9&gt;/drift</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.drift_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[3  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1597')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_Z_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_Z_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1576')" name="code2model" class="code2model">&lt;S95&gt;/P_Z_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_Z_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1596')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_Z_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_Z_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1575')" name="code2model" class="code2model">&lt;S95&gt;/P_Z_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_Z_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3558')" name="code2model" class="code2model">&lt;S86&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3558')" name="code2model" class="code2model">&lt;S86&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3568')" name="code2model" class="code2model">&lt;S86&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3568')" name="code2model" class="code2model">&lt;S86&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:861')" name="code2model" class="code2model">&lt;S74&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_oa
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:864')" name="code2model" class="code2model">&lt;S74&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:864')" name="code2model" class="code2model">&lt;S74&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_df
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1548')" name="code2model" class="code2model">&lt;S95&gt;/D_Z_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_Z_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:863:4')" name="code2model" class="code2model">&lt;S77&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3557')" name="code2model" class="code2model">&lt;S73&gt;/med_thrust</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.med_thrust_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3634')" name="code2model" class="code2model">&lt;S85&gt;/adapt_thrust</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.adapt_thrust_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3633')" name="code2model" class="code2model">&lt;S85&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_tableData
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3633')" name="code2model" class="code2model">&lt;S85&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_bp01Data
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3635')" name="code2model" class="code2model">&lt;S85&gt;/dZgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.dZgain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3636')" name="code2model" class="code2model">&lt;S85&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_Start
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3636')" name="code2model" class="code2model">&lt;S85&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_End
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3641')" name="code2model" class="code2model">&lt;S85&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3641')" name="code2model" class="code2model">&lt;S85&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3381')" name="code2model" class="code2model">&lt;S75&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3384')" name="code2model" class="code2model">&lt;S75&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3384')" name="code2model" class="code2model">&lt;S75&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1549')" name="code2model" class="code2model">&lt;S95&gt;/D_Z_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_Z_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3383:4')" name="code2model" class="code2model">&lt;S81&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1355')" name="code2model" class="code2model">&lt;S91&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1352')" name="code2model" class="code2model">&lt;S91&gt;/Constant8</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant8_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1592')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_RollPitch_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_RollPitch_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1570')" name="code2model" class="code2model">&lt;S95&gt;/P_RollPitch_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_RollPitch_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1591')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_RollPitch_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_RollPitch_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1569')" name="code2model" class="code2model">&lt;S95&gt;/P_RollPitch_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_RollPitch_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4945')" name="code2model" class="code2model">&lt;S52&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1605')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_XY_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_XY_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1571')" name="code2model" class="code2model">&lt;S95&gt;/P_XY_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_XY_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4681')" name="code2model" class="code2model">&lt;S68&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainv_mu
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4681')" name="code2model" class="code2model">&lt;S68&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4682')" name="code2model" class="code2model">&lt;S68&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_pm
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4682')" name="code2model" class="code2model">&lt;S68&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2916')" name="code2model" class="code2model">&lt;S58&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_Start_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2916')" name="code2model" class="code2model">&lt;S58&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_End_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:998')" name="code2model" class="code2model">&lt;S58&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2917')" name="code2model" class="code2model">&lt;S58&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_Start
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2917')" name="code2model" class="code2model">&lt;S58&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_End
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:999')" name="code2model" class="code2model">&lt;S58&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2920')" name="code2model" class="code2model">&lt;S58&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_UpperSat_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2920')" name="code2model" class="code2model">&lt;S58&gt;/Saturation1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation1_LowerSat_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4691')" name="code2model" class="code2model">&lt;S70&gt;/adapt_thrust</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.adapt_thrust_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4688')" name="code2model" class="code2model">&lt;S70&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_tableData_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4688')" name="code2model" class="code2model">&lt;S70&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_bp01Data_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4692')" name="code2model" class="code2model">&lt;S70&gt;/dZgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.dZgain_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4689')" name="code2model" class="code2model">&lt;S70&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_Start_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4689')" name="code2model" class="code2model">&lt;S70&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_End_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4690')" name="code2model" class="code2model">&lt;S70&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4690')" name="code2model" class="code2model">&lt;S70&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3413')" name="code2model" class="code2model">&lt;S56&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3413')" name="code2model" class="code2model">&lt;S56&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3341')" name="code2model" class="code2model">&lt;S95&gt;/D_XY_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_XY_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3412:4')" name="code2model" class="code2model">&lt;S60&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1606')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_XY_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_XY_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4899')" name="code2model" class="code2model">&lt;S52&gt;/pid//pid_cascade</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.pidpid_cascade_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1593')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_XY_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_XY_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1572')" name="code2model" class="code2model">&lt;S95&gt;/P_XY_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_XY_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1071')" name="code2model" class="code2model">&lt;S52&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1071')" name="code2model" class="code2model">&lt;S52&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1062')" name="code2model" class="code2model">&lt;S57&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainv_mv
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1062')" name="code2model" class="code2model">&lt;S57&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_hz
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1545')" name="code2model" class="code2model">&lt;S95&gt;/D_XY_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_XY_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1061:4')" name="code2model" class="code2model">&lt;S64&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1600')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_XY_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_XY_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2932')" name="code2model" class="code2model">&lt;S52&gt;/r</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.r_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2933')" name="code2model" class="code2model">&lt;S52&gt;/p</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.p_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4946')" name="code2model" class="code2model">&lt;S52&gt;/r1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.r1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4947')" name="code2model" class="code2model">&lt;S52&gt;/r2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.r2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3442')" name="code2model" class="code2model">&lt;S34&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3442')" name="code2model" class="code2model">&lt;S34&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1543')" name="code2model" class="code2model">&lt;S95&gt;/D_RollPitch_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_RollPitch_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3441:4')" name="code2model" class="code2model">&lt;S45&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1598')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_RollPitch_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_RollPitch_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3471')" name="code2model" class="code2model">&lt;S32&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3471')" name="code2model" class="code2model">&lt;S32&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_ly
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1544')" name="code2model" class="code2model">&lt;S95&gt;/D_RollPitch_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_RollPitch_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3470:4')" name="code2model" class="code2model">&lt;S37&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1599')" name="code2model" class="code2model">&lt;S95&gt;/SatNeg_RollPitch_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatNeg_RollPitch_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4288')" name="code2model" class="code2model">&lt;S29&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2  1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1357')" name="code2model" class="code2model">&lt;S91&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain3_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1359')" name="code2model" class="code2model">&lt;S91&gt;/Gain5</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain5_Gain_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1595')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_Yaw_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_Yaw_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1574')" name="code2model" class="code2model">&lt;S95&gt;/P_Yaw_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_Yaw_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1594')" name="code2model" class="code2model">&lt;S95&gt;/SatPos_Yaw_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.SatPos_Yaw_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1573')" name="code2model" class="code2model">&lt;S95&gt;/P_Yaw_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.P_Yaw_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3763')" name="code2model" class="code2model">&lt;S29&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_Start_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3763')" name="code2model" class="code2model">&lt;S29&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_End_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3501')" name="code2model" class="code2model">&lt;S35&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainva_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3501')" name="code2model" class="code2model">&lt;S35&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_cx
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1546')" name="code2model" class="code2model">&lt;S95&gt;/D_Yaw_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_Yaw_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3500:4')" name="code2model" class="code2model">&lt;S49&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3530')" name="code2model" class="code2model">&lt;S33&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_gainv_iz
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3530')" name="code2model" class="code2model">&lt;S33&gt;/Discrete-Time Integrator</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DiscreteTimeIntegrator_IC_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1547')" name="code2model" class="code2model">&lt;S95&gt;/D_Yaw_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.D_Yaw_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3529:4')" name="code2model" class="code2model">&lt;S41&gt;/TSamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.TSamp_WtEt_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1361')" name="code2model" class="code2model">&lt;S91&gt;/Gain7</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain7_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1377')" name="code2model" class="code2model">&lt;S7&gt;/scale2ticks</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.scale2ticks_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1257')" name="code2model" class="code2model">&lt;S7&gt;/Constant3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2575')" name="code2model" class="code2model">&lt;S3&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_i2
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2576')" name="code2model" class="code2model">&lt;S3&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_mz
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2577')" name="code2model" class="code2model">&lt;S3&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3950')" name="code2model" class="code2model">&lt;S18&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_Start_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3950')" name="code2model" class="code2model">&lt;S18&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_End_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3955')" name="code2model" class="code2model">&lt;S18&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3951')" name="code2model" class="code2model">&lt;S18&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_Start_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3951')" name="code2model" class="code2model">&lt;S18&gt;/Dead Zone1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone1_End_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3956')" name="code2model" class="code2model">&lt;S18&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_au
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4177')" name="code2model" class="code2model">&lt;S20&gt;/med_thrust</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.med_thrust_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4153')" name="code2model" class="code2model">&lt;S25&gt;/adapt_thrust</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.adapt_thrust_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4150')" name="code2model" class="code2model">&lt;S25&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_tableData_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4150')" name="code2model" class="code2model">&lt;S25&gt;/1-D Lookup Table</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.uDLookupTable_bp01Data_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  601]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4154')" name="code2model" class="code2model">&lt;S25&gt;/dZgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.dZgain_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4151')" name="code2model" class="code2model">&lt;S25&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_Start_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4151')" name="code2model" class="code2model">&lt;S25&gt;/Dead Zone</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.DeadZone_End_l5
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4152')" name="code2model" class="code2model">&lt;S25&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_UpperSat_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4152')" name="code2model" class="code2model">&lt;S25&gt;/Saturation</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Saturation_LowerSat_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4175')" name="code2model" class="code2model">&lt;S26&gt;/Zgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Zgain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1561')" name="code2model" class="code2model">&lt;S95&gt;/I_RollPitch_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_RollPitch_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3468')" name="code2model" class="code2model">&lt;S32&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_gt
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3527')" name="code2model" class="code2model">&lt;S33&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4240')" name="code2model" class="code2model">&lt;S33&gt;/Constant2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant2_Value_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1560')" name="code2model" class="code2model">&lt;S95&gt;/I_RollPitch_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_RollPitch_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3439')" name="code2model" class="code2model">&lt;S34&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_lb
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1564')" name="code2model" class="code2model">&lt;S95&gt;/I_Yaw_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_Yaw_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1562')" name="code2model" class="code2model">&lt;S95&gt;/I_XY_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_XY_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3410')" name="code2model" class="code2model">&lt;S56&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_jp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1563')" name="code2model" class="code2model">&lt;S95&gt;/I_XY_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_XY_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1059')" name="code2model" class="code2model">&lt;S57&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_g3
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4684')" name="code2model" class="code2model">&lt;S68&gt;/Zgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Zgain_Gain_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4680')" name="code2model" class="code2model">&lt;S68&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_gv
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1566')" name="code2model" class="code2model">&lt;S95&gt;/I_Z_pos</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_Z_pos_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1567')" name="code2model" class="code2model">&lt;S95&gt;/I_Z_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.I_Z_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3640')" name="code2model" class="code2model">&lt;S86&gt;/Zgain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Zgain_Gain_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3243')" name="code2model" class="code2model">&lt;S102&gt;/Gain</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain_Gain_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3244')" name="code2model" class="code2model">&lt;S102&gt;/Gain1</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain1_Gain_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3245')" name="code2model" class="code2model">&lt;S102&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4922')" name="code2model" class="code2model">&lt;S172&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain3_Gain_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4950')" name="code2model" class="code2model">&lt;S172&gt;/q </a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.q_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[4  1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4709')" name="code2model" class="code2model">&lt;S174&gt;/Gain3</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain3_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4708')" name="code2model" class="code2model">&lt;S174&gt;/Gain2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Gain2_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:64')" name="code2model" class="code2model">&lt;S89&gt;/Constant5</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant5_Value_p
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:65')" name="code2model" class="code2model">&lt;S89&gt;/Constant6</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant6_Value_i
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:66')" name="code2model" class="code2model">&lt;S89&gt;/Constant7</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant7_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:67')" name="code2model" class="code2model">&lt;S89&gt;/Constant8</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant8_Value_d
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:68')" name="code2model" class="code2model">&lt;S89&gt;/Constant9</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant9_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:69')" name="code2model" class="code2model">&lt;S89&gt;/Constant18</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant18_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:70')" name="code2model" class="code2model">&lt;S89&gt;/Constant10</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant10_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:71')" name="code2model" class="code2model">&lt;S89&gt;/Constant11</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant11_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:72')" name="code2model" class="code2model">&lt;S89&gt;/Constant12</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant12_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:256')" name="code2model" class="code2model">&lt;S89&gt;/Constant14</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant14_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1314')" name="code2model" class="code2model">&lt;S89&gt;/Constant4</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant4_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1312')" name="code2model" class="code2model">&lt;S89&gt;/Constant17</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant17_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1311')" name="code2model" class="code2model">&lt;S89&gt;/Constant16</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant16_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1310')" name="code2model" class="code2model">&lt;S89&gt;/Constant15</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant15_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1324')" name="code2model" class="code2model">&lt;S89&gt;/Manual Switch2</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ManualSwitch2_CurrentSetting
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1320')" name="code2model" class="code2model">&lt;S89&gt;/Manual Switch13</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ManualSwitch13_CurrentSetting
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1321')" name="code2model" class="code2model">&lt;S89&gt;/Manual Switch14</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ManualSwitch14_CurrentSetting
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:1322')" name="code2model" class="code2model">&lt;S89&gt;/Manual Switch15</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.ManualSwitch15_CurrentSetting
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3348')" name="code2model" class="code2model">&lt;S155&gt;/enable_PC</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.enable_PC_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2021')" name="code2model" class="code2model">&lt;S155&gt;/rollPitch_pos_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.rollPitch_pos_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3929')" name="code2model" class="code2model">&lt;S155&gt;/position</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.position_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3740')" name="code2model" class="code2model">&lt;S155&gt;/geometricControl</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.geometricControl_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:4231')" name="code2model" class="code2model">&lt;S8&gt;/Constant</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Constant_Value_gs
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3347')" name="code2model" class="code2model">&lt;S155&gt;/Z_pos_vel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.Z_pos_vel_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:3346')" name="code2model" class="code2model">&lt;S155&gt;/XY_pos_vel</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.XY_pos_vel_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('controlAerobi:2022')" name="code2model" class="code2model">&lt;S155&gt;/yaw_pos_rate</a>
+</td>
+<td width="26%" align="left" valign="top">
+controlAerobi_P.yaw_pos_rate_Value
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

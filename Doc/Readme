@@ -1,0 +1,16 @@
+#Installations:
+    -Eclipse
+    -Putty
+    -Boost c++ library
+    -Cross-compiler raspberry pi (arm-linux-gnueabihf & arm-linux-gnueabi)
+    -Matlab 2017b and supportpackage Raspberry pi (matlab and simulink)
+
+#Solution Matlab error libstdc++.so.6 not found:
+    -Move libstdc++.so.6 and libstdc++.so.6.0.20 into a foldre exclude or change its names (libstdc++.so.6.bak & libstdc++.so.6.0.20.bak).
+    -sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21 /usr/local/MATLAB/R2017b/sys/os/glnxa64/libstdc++.so.6
+
+#Solution Matlab error unexpect exception(basic_ois::clear::iostream error) was caught
+    -Comment line 180 in matlabroot/toolbox/coder/simulinkcoder_core/+core/+oneclick/TargetHook.m
+        %warninglog = matlab.internal.diagnostic.log.load(logfile)
+    -Add the following line:
+        warninglog.identifier = ' ';

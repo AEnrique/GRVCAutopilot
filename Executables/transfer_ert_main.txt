@@ -1,0 +1,4 @@
+lcd /home/ae-grvc/Documentos/Workspace/AutoPilot/GRVCAutopilot/
+cd rtw/controlAerobi_ert_rtw
+put ert_main.cpp
+quit

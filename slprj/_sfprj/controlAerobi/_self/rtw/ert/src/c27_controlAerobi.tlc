@@ -1,0 +1,69 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "x_k"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:355-358"\
+      Dimensions   [6]\
+    }\
+    ChartData {\
+      Name         "x_k_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:355-358"\
+    }\
+    ChartData {\
+      Name         "P_k"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:359-362"\
+      Dimensions   [6,6]\
+    }\
+    ChartData {\
+      Name         "P_k_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:359-362"\
+    }\
+    ChartData {\
+      Name         "x0_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:363-365"\
+    }\
+    ChartData {\
+      Name         "y0_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:366-368"\
+    }\
+    ChartData {\
+      Name         "z0_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "controlAerobi:4782:369-371"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
