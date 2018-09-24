@@ -1,0 +1,1 @@
+sudo /home/pi/remote/controlAerobi.elf -hostname tcp -port 17725 -client aegrvc.local

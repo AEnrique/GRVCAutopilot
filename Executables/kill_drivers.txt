@@ -1,2 +1,2 @@
 sudo pkill -f controlAerobi.e
-sudo pkill -f driversNavio2
+sudo pkill -f bridge_navio

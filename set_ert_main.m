@@ -108,7 +108,7 @@ if changed == true
     input_shared_memory=string();
     output_shared_memory=string();
     create_shared_memory=string();
-    launch_drivers='\n        execl("/home/pi/remote/driversNavio2","driversNavio2"';
+    launch_drivers='\n        execl("/home/pi/remote/bridge_navio","bridge_navio"';
     for i=1:length(ports)
         if i==1
             shared_memory_global=strcat(shared_memory_global,'\n');
@@ -196,7 +196,37 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_px4flow>(&px4flow),sizeof(shm_px4flow));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_px4flow>(&px4flow,SHM_PX4FLOW,SEM_PX4FLOW);');
-                launch_drivers=strcat(launch_drivers,',"px4flow"');     
+                launch_drivers=strcat(launch_drivers,',"px4flow"');
+            case 'shm_svo'
+                %disp('7.exist');
+                shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_svo> svo;');
+                input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_svo>(&svo),sizeof(shm_svo));');
+                output_shared_memory=strcat(output_shared_memory,'');
+                create_shared_memory=strcat(create_shared_memory,'create_shm<shm_svo>(&svo,SHM_SVO,SEM_SVO);');
+                launch_drivers=strcat(launch_drivers,',"svo"');     
+            case 'shm_attitudePX4EKF2'
+                %disp('7.exist');
+                shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_attitudePX4EKF2> att_px4ekf2;');
+                input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_attitudePX4EKF2>(&att_px4ekf2),sizeof(shm_attitudePX4EKF2));');
+                output_shared_memory=strcat(output_shared_memory,'');
+                create_shared_memory=strcat(create_shared_memory,'create_shm<shm_attitudePX4EKF2>(&att_px4ekf2,SHM_ATTPX4,SEM_ATTPX4);');
+                     
+                %break;
+            case 'shm_globalPositionPX4EKF2'
+                %disp('7.exist');
+                shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_globalPositionPX4EKF2> globalposition_px4ekf2;');
+                input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_globalPositionPX4EKF2>(&globalposition_px4ekf2),sizeof(shm_globalPositionPX4EKF2));');
+                output_shared_memory=strcat(output_shared_memory,'');
+                create_shared_memory=strcat(create_shared_memory,'create_shm<shm_globalPositionPX4EKF2>(&globalposition_px4ekf2,SHM_GLOBALPOSPX4,SEM_GLOBALPOSPX4);');
+                     
+                %break;    
+            case 'shm_localPositionPX4EKF2'
+                %disp('7.exist');
+                shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_localPositionPX4EKF2> localposition_px4ekf2;');
+                input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_localPositionPX4EKF2>(&localposition_px4ekf2),sizeof(shm_localPositionPX4EKF2));');
+                output_shared_memory=strcat(output_shared_memory,'');
+                create_shared_memory=strcat(create_shared_memory,'create_shm<shm_localPositionPX4EKF2>(&localposition_px4ekf2,SHM_LOCALPOSPX4,SEM_LOCALPOSPX4);');
+                     
                 %break;    
             case 'shm_RCou'
                 %disp('8.exist');

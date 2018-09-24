@@ -14,3 +14,32 @@
         %warninglog = matlab.internal.diagnostic.log.load(logfile)
     -Add the following line:
         warninglog.identifier = ' ';
+
+#Launch SVO ODROID
+    -ssh odroid@odroid.local (pwd:=odroid)
+    #-roslaunch svo_ros live.launch
+    -bash launch.sh
+
+#Compile bridge_driver from ../Debug
+    sudo make -f makefile all
+
+# sshpass -p 'raspberry'  ssh pi@navioAE-1.local
+
+# Launch PX4
+sudo /home/pi/src/Firmware/build/posix_rpi_native/px4 /home/pi/src/Firmware/posix-configs/rpi/px4.config 
+#sudo /home/pi/src/PX4_grvc/build_posix_rpi_native/src/firmware/posix/px4 /home/pi/src/PX4_grvc/posix-configs/rpi/px4.config
+
+#Add module PX4
+    -cmake/configs/posix_rpi_common.cmake (edit to add the module)
+    -posix-configs/rpi/px4.config (edit to run the module)
+    -sudo make posix_rpi_native (compile)
+
+#Parameter PX4 vision pose EKF2
+Modo altura: EKF2_HGT_MODE
+Control data fusion: EKF2_AID_MASK
+
+#Recover Data from RASPI
+    r=raspberrypi('navioAE-1.local','pi','raspberry');
+    getFile(r,'/home/pi/controlAerobi_1_1.mat');
+
+
