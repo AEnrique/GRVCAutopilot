@@ -1,0 +1,1 @@
+sudo /home/pi/remote/bridge_navio rcio lsm sf11c px4flow svo totalstation quad

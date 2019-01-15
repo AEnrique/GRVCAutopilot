@@ -1,4 +1,8 @@
 lcd /home/ae-grvc/Documentos/Workspace/AutoPilot/GRVCAutopilot/
 cd rtw/controlAerobi_ert_rtw
 put ert_main.cpp
+lcd /home/ae-grvc/Documentos/Workspace/AutoPilot/GRVCAutopilot/Executables
+cd ../..
+cd remote
+put run_bridge
 quit

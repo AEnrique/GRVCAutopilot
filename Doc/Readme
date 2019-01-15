@@ -18,7 +18,9 @@
 #Launch SVO ODROID
     -ssh odroid@odroid.local (pwd:=odroid)
     #-roslaunch svo_ros live.launch
-    -bash launch.sh
+    -launch_svo.sh (lente normal)
+    -ocam_pez.sh (ojo de pez)
+    -matrix_vision_svo.sh (camara matrix_vision)
 
 #Compile bridge_driver from ../Debug
     sudo make -f makefile all
@@ -33,6 +35,10 @@ sudo /home/pi/src/Firmware/build/posix_rpi_native/px4 /home/pi/src/Firmware/posi
     -cmake/configs/posix_rpi_common.cmake (edit to add the module)
     -posix-configs/rpi/px4.config (edit to run the module)
     -sudo make posix_rpi_native (compile)
+#Add msg PX4
+    -msg/CmakeLists.txt (add name_file_msg.msg)
+    -msg (add the file *.msg)
+    -src/platforms/px4_includes.h (add #include <platforms/posix/px4_messages/px4_name_file_msg.h>)
 
 #Parameter PX4 vision pose EKF2
 Modo altura: EKF2_HGT_MODE
@@ -42,4 +48,9 @@ Control data fusion: EKF2_AID_MASK
     r=raspberrypi('navioAE-1.local','pi','raspberry');
     getFile(r,'/home/pi/controlAerobi_1_1.mat');
 
+#Recover AVAHI-DAEMON
+    sudo service avahi-daemon stop
+    sudo service avahi-daemon start
 
+#ESC Calibration
+sudo ./bridge_navio rcio (quad,hexa,octo) calibrationrotors

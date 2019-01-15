@@ -1,0 +1,14 @@
+#List Logs
+    -Raw_data
+        accel(3)
+        gyro(3)
+        mag(3)
+        totalStation(3)
+        px4flow(4)
+        svo(7)
+        sf11c(1)
+        localPosition(6)
+        attitude(4)
+        
+        
+        

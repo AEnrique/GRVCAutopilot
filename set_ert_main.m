@@ -14,6 +14,7 @@ function set_ert_main(pathProject,nameProject,numRotors)
 
 file_h = strcat(pathProject,nameProject,'_ert_rtw/',nameProject,'.h');
 file_main = strcat(pathProject,'/ert_main.cpp');
+file_bridge = strcat(pathProject,'/Executables/run_bridge');
 inputs_var = strcat('ExternalInputs_',nameProject,';');
 outputs_var = strcat('ExternalOutputs_',nameProject,';');
 N_inputs_var = strcat(nameProject,'_U');
@@ -108,7 +109,8 @@ if changed == true
     input_shared_memory=string();
     output_shared_memory=string();
     create_shared_memory=string();
-    launch_drivers='\n        execl("/home/pi/remote/bridge_navio","bridge_navio"';
+    %launch_drivers='\n        execl("/home/pi/remote/bridge_navio","bridge_navio"';
+    launch_drivers='sudo /home/pi/remote/bridge_navio';
     for i=1:length(ports)
         if i==1
             shared_memory_global=strcat(shared_memory_global,'\n');
@@ -125,13 +127,15 @@ if changed == true
                     input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports{i,1},', get_shm<shm_imu>(&imu_mpu9250),sizeof(shm_imu));');
                     output_shared_memory=strcat(output_shared_memory,'');
                     create_shared_memory=strcat(create_shared_memory,'create_shm<shm_imu>(&imu_mpu9250,SHM_MPU9250,SEM_MPU9250);');
-                    launch_drivers=strcat(launch_drivers,',"mpu"');
+                    %launch_drivers=strcat(launch_drivers,',"mpu"');
+                    launch_drivers=strcat(launch_drivers,' mpu');
                 elseif ~isempty(strfind(ports{i,1},'lsm'))
                     shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_imu> imu_lsm9ds1;');
                     input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports{i,1},', get_shm<shm_imu>(&imu_lsm9ds1),sizeof(shm_imu));');
                     output_shared_memory=strcat(output_shared_memory,'');
                     create_shared_memory=strcat(create_shared_memory,'create_shm<shm_imu>(&imu_lsm9ds1,SHM_LSM9DS1,SEM_LSM9DS1);');
-                    launch_drivers=strcat(launch_drivers,',"lsm"');                
+                    %launch_drivers=strcat(launch_drivers,',"lsm"'); 
+                    launch_drivers=strcat(launch_drivers,' lsm');     
                 end
 
             case 'shm_RCin'
@@ -140,7 +144,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_RCin>(&rcin),sizeof(shm_RCin));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_RCin>(&rcin,SHM_RCIN,SEM_RCIN);');
-                launch_drivers=strcat(launch_drivers,',"rcio"');     
+                %launch_drivers=strcat(launch_drivers,',"rcio"');
+                launch_drivers=strcat(launch_drivers,' rcio');     
                 %break;
             case 'shm_ahrs'
                 %disp('3.exist');
@@ -148,7 +153,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_ahrs>(&ahrs),sizeof(shm_ahrs));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_ahrs>(&ahrs,SHM_AHRS,SEM_AHRS);');
-                launch_drivers=strcat(launch_drivers,',"ahrs"');     
+                %launch_drivers=strcat(launch_drivers,',"ahrs"');
+                launch_drivers=strcat(launch_drivers,' ahrs');
                 %break;
             case 'shm_lightware'
                 %disp('4.exist');
@@ -156,7 +162,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_lightware>(&sf11c),sizeof(shm_lightware));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_lightware>(&sf11c,SHM_SF11C,SEM_SF11C);');
-                launch_drivers=strcat(launch_drivers,',"sf11c"');     
+                %launch_drivers=strcat(launch_drivers,',"sf11c"');
+                launch_drivers=strcat(launch_drivers,' sf11c');
                 %break;
             case 'shm_adc'
                 %disp('5.exist');
@@ -164,7 +171,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_adc>(&adc),sizeof(shm_adc));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_adc>(&adc,SHM_ADC,SEM_ADC);');
-                launch_drivers=strcat(launch_drivers,',"adc"');     
+                %launch_drivers=strcat(launch_drivers,',"adc"');
+                launch_drivers=strcat(launch_drivers,' adc');
                 %break;
             case 'shm_barometer'
                 %disp('6.exist');
@@ -172,7 +180,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_barometer>(&baro),sizeof(shm_barometer));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_barometer>(&baro,SHM_MS5611,SEM_MS5611);');
-                launch_drivers=strcat(launch_drivers,',"baro"');     
+                %launch_drivers=strcat(launch_drivers,',"baro"');
+                launch_drivers=strcat(launch_drivers,' baro');
                 %break;
             case 'shm_totalStation'
                 %disp('7.exist');
@@ -180,7 +189,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_totalStation>(&totalstation),sizeof(shm_totalStation));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_totalStation>(&totalstation,SHM_TOTALSTATION,SEM_TOTALSTATION);');
-                launch_drivers=strcat(launch_drivers,',"totalstation"');     
+                %launch_drivers=strcat(launch_drivers,',"totalstation"'); 
+                launch_drivers=strcat(launch_drivers,' totalstation');
                 %break;
             case 'shm_gps'
                 %disp('7.exist');
@@ -188,7 +198,8 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_gps>(&gps),sizeof(shm_gps));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_gps>(&gps,SHM_GPS,SEM_GPS);');
-                launch_drivers=strcat(launch_drivers,',"gps"');     
+                %launch_drivers=strcat(launch_drivers,',"gps"'); 
+                launch_drivers=strcat(launch_drivers,' gps'); 
                 %break;    
             case 'shm_px4flow'
                 %disp('7.exist');
@@ -196,14 +207,16 @@ if changed == true
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_px4flow>(&px4flow),sizeof(shm_px4flow));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_px4flow>(&px4flow,SHM_PX4FLOW,SEM_PX4FLOW);');
-                launch_drivers=strcat(launch_drivers,',"px4flow"');
+                %launch_drivers=strcat(launch_drivers,',"px4flow"');
+                launch_drivers=strcat(launch_drivers,' px4flow');
             case 'shm_svo'
                 %disp('7.exist');
                 shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_svo> svo;');
                 input_shared_memory=strcat(input_shared_memory,'memcpy(&',N_inputs_var,'.',ports(i,1),', get_shm<shm_svo>(&svo),sizeof(shm_svo));');
                 output_shared_memory=strcat(output_shared_memory,'');
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_svo>(&svo,SHM_SVO,SEM_SVO);');
-                launch_drivers=strcat(launch_drivers,',"svo"');     
+                %launch_drivers=strcat(launch_drivers,',"svo"');
+                launch_drivers=strcat(launch_drivers,' svo');
             case 'shm_attitudePX4EKF2'
                 %disp('7.exist');
                 shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_attitudePX4EKF2> att_px4ekf2;');
@@ -236,6 +249,14 @@ if changed == true
                 create_shared_memory=strcat(create_shared_memory,'create_shm<shm_RCou>(&rcout,SHM_RCOUT,SEM_RCOUT);');
                 launch_drivers=strcat(launch_drivers,'');     
                 %break;
+            case 'shm_status'
+                %disp('8.exist');
+                shared_memory_global=strcat(shared_memory_global,'static struct shm_str<shm_status> status;');
+                input_shared_memory=strcat(input_shared_memory,'');
+                output_shared_memory=strcat(output_shared_memory,'    if (set_shm<shm_status>(&status, ',N_outputs_var,'.',ports(i,1),') == 0)printf("Error to write in shared memory direction.");\n');
+                create_shared_memory=strcat(create_shared_memory,'create_shm<shm_status>(&status,SHM_STATUS,SEM_STATUS);');
+                launch_drivers=strcat(launch_drivers,'');     
+                %break;
         end
         shared_memory_global=strcat(shared_memory_global,'\n');
         input_shared_memory=strcat(input_shared_memory,'\n');
@@ -243,12 +264,13 @@ if changed == true
         create_shared_memory=strcat(create_shared_memory,'\n');   
     end
 
-    launch_drivers=strcat(launch_drivers,[',"',numRotors,'");\n']);     
+    %launch_drivers=strcat(launch_drivers,[',"',numRotors,'");\n']); 
+    launch_drivers=strcat(launch_drivers,[' ',numRotors,' ']);  
     buffer = replaceBetween(buffer,'//----------Shared memory global variables--------//','//----------End shared memory global variables--------//',compose(shared_memory_global));
     buffer = replaceBetween(buffer,'//------------Input from the shared memory------------------///','//------------End input from the shared memory------------------///',compose(input_shared_memory));
     buffer = replaceBetween(buffer,'//------------Output from the shared memory------------------///','//------------End output from the shared memory------------------///',compose(output_shared_memory));
     buffer = replaceBetween(buffer,'/////////-------------Create shared memory-------------////////////////////////','/////////------------End create shared memory-------------//////////////////////',compose(create_shared_memory));
-    buffer = replaceBetween(buffer,'printf("**starting the drivers**\n");','exit(1)',compose(launch_drivers));
+    %buffer = replaceBetween(buffer,'printf("**starting the drivers**\n");','exit(1)',compose(launch_drivers));
     %tline = fgets(fileID);
     %while ischar(tline)
     %    if ~isempty(strfind(tline,'//----------Shared memory global variables--------//'))
@@ -256,7 +278,10 @@ if changed == true
     %    end
     %    tline = fgets(fileID);
     %end
-    
+    disp(launch_drivers);
+    fileID_bridge = fopen(file_bridge,'w');
+    fwrite(fileID_bridge, launch_drivers);
+    fclose(fileID_bridge);
     %fileID = fopen('D:\Eclipse_Workspaces\workspace_rasp\AutoPilot\contAerobi\ert_main.cpp','w');
     fileID = fopen(file_main,'w');
     fwrite(fileID, buffer) ;
