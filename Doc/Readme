@@ -54,3 +54,19 @@ Control data fusion: EKF2_AID_MASK
 
 #ESC Calibration
 sudo ./bridge_navio rcio (quad,hexa,octo) calibrationrotors
+
+#Launch Total Station
+    cd /home/ae-grvc/Documentos/Workspace/laserSystemUSE/build
+    ./laserSystemUSE
+#Configuration VICON CATEC
+    sudo nano /etc/dhcpcd.conf
+    interface intwifi0
+    static ip_address=10.0.0.65
+    static netmask=255.255.255.0
+    static routers=10.0.0.254
+    static domain_name_servers=192.168.5.201
+
+#Install TOML (to compile PX4)
+    git clone https://github.com/uiri/toml.git
+    cd toml
+    python setup.py install
